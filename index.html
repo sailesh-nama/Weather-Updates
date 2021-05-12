@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather Updates</title>
+     <link rel="icon" href="favicon.ico">
+    <style media="screen">
+      *{
+        font-family: 'Goblin One', cursive;
+        background-color: #fff9b0;
+      }
+      h1{
+        text-align: center;
+         color: #ff7b54;
+         font-size: 3rem;
+         margin: 5% auto 0;
+      }
+      p{
+        text-align: center;
+        margin: 0 0 0 35%;
+        font-size: 1rem;
+        color: #be0000;
+      }
+      table{
+        margin: auto;
+        width: 50%;
+      }
+      td{
+        text-align: right;
+        padding:2%;
+      }
+      .box{
+        text-align: center;
+        margin: 5%;
+      }
+      .text-input {
+        padding: 0.7rem 1rem;
+        display: block;
+        width: 160px;
+        border-radius: 5px;
+        border: 1px solid #e0e0e0;
+        outline: none;
+        color: #444;
+        line-height: 1.5rem;
+        font-size: 1.2em;
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+      }
+      .btn{
+        margin: auto;
+        width: 250px;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  </head>
+  <body>
+    <h1>Live Weather Updates</h1>
+    <p>Powered by OpenWeather API</p>
+    <form class = "box" action="/" method="post">
+      <table>
+        <tr>
+          <td>
+            <label for="city">Enter city name: </label>
+          </td>
+          <td>
+            <input class="text-input" type="text" id = "city" name="City" placeholder="Vellore">
+          </td>
+        </tr>
+        <tr>
+          <td>
+              <label for="units">Enter desired temperature units: </label>
+          </td>
+          <td>
+            <select class="text-input" name="Options">
+              <option value="kelvin">Kelvin</option>
+              <option value="celsius">Celcius</option>
+              <option value="fahrenheit">Farenheit</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button class="text-input btn" type="submit">Check Weather </button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
